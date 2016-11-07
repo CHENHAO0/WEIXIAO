@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="jquery-1.8.3/jquery.min.js"></script>
+	<style>
+	*{margin: 0;padding: 0;list-style: none;}
+		body{background: #36373c;}
+		ul{
+			position: absolute;
+			top: 0;
+			
+		}
+		#ul .divtop{
+			width: 29px;
+			height: 10px;
+			background: #fff;
+			transform:skew(70deg,-11deg);
+			border: 1px solid #fff;
+			position: absolute;
+			top: 300px;
+			left: 600px;
+			}
+	    	#ul .divleft{
+			width: 29px;
+			height: 29px;
+			background: #fff;
+			transform:skew(0deg,20deg);
+			border: 1px solid #fff;
+			position: absolute;
+			top: 309px;
+			left: 584px;
+		}
+		#ul .divright{
+			width: 30px;
+			height: 29px;
+			background: #96a0ce;
+			transform:skew(0deg,-11deg);
+			border: 1px solid #96a0ce;
+			position: absolute;
+			top: 312px;
+			left: 615px;
+		}
+		@keyframes myfirst{
+			0% {background: rgba(255,255,255,0.0);}
+			10% {background: rgba(255,255,255,0.1);}
+			20%	{background: rgba(255,255,255,0.2);}
+			30% {background: rgba(255,255,255,0.3);}
+			40% {background: rgba(255,255,255,0.4);}
+			50% {background: rgba(255,255,255,0.5);}
+			60% {background: rgba(255,255,255,0.4);}
+			70% {background: rgba(255,255,255,0.3);}
+			80% {background: rgba(255,255,255,0.2);}
+			90% {background: rgba(255,255,255,0.1);}
+			100% {background: rgba(255,255,255,0);}
+		}
+
+		#paopao{
+			
+		}
+		.pao1{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		
+		position: absolute;
+		top: 360px;
+		left: 520px; 
+		animation: myfirst 10s;
+		
+	}
+		.pao2{
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+		
+			position: absolute;
+			top: 350px;
+			left: 550px;
+			animation: myfirst 10s;
+			
+	}
+		.pao3{
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+		
+			position: absolute;
+			top: 370px;
+			left: 600px;
+			animation: myfirst 10s;
+			
+		}
+		.pao4{
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			position: absolute;
+			top: 320px;
+			left: 590px;
+			animation: myfirst 10s;
+			
+		}
+		.pao5{
+			width:60px;
+			height: 60px;
+			border-radius: 50%;
+			
+			position: absolute;
+			top: 300px;
+			left: 550px; 
+		animation: myfirst 10s;
+			
+		}
+		.pao6{
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			position: absolute;
+			top: 300px;
+			left: 580px;
+		animation: myfirst 10s;
+		}
+		.pao7{
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			position: absolute;
+			top: 300px;
+			left: 590px;
+			animation: myfirst 10s;
+		}
+		.pao8{
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			position: absolute;
+			top: 300px;
+			left: 600px;
+			animation: myfirst 10s;
+		}
+		.pao9{
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			position: absolute;
+			top:310px;
+			left: 610px;
+			animation: myfirst 10s;
+		}
+		.pao10{
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			position: absolute;
+			top: 270px;
+			left: 600px;
+			animation: myfirst 10s;
+		}
+		.pao11{
+			width: 
+		}
+	</style>
+</head>
+<body>
+
+<ul onclick="baozha()" id="ul">
+<li class="divtop"></li>
+<li class="divleft"></li>
+<li class="divright"></li>
+
+</ul>
+
+<div class="pao1" id="paopao"></div>
+<div class="pao2" id="paopao"></div>
+<div class="pao3" id="paopao"></div>
+<div class="pao4" id="paopao"></div>
+<div class="pao5" id="paopao"></div>
+<div class="pao6" id="paopao"></div>
+<div class="pao7" id="paopao"></div>
+<div class="pao8" id="paopao"></div>
+<div class="pao9" id="paopao"></div>
+<div class="pao10" id="paopao"></div>
+<div class="pao11" id="paopao"></div>
+<div class="pao12" id="paopao"></div>
+<div class="pao13" id="paopao"></div>
+<div class="pao14" id="paopao"></div>
+<div class="pao15" id="paopao"></div>
+
+<script>
+		function run(){
+			$('#ul').animate({top:'30px'},200)
+					.animate({top:'0px'},200);
+
+		}
+		setInterval(function(){
+			return run();
+		},200)
+		
+		$('#ul').click(function(){
+			$('#paopao').animate({width:'100px',height:'100px'},4000);
+
+		})
+		
+		function baozha(){
+
+		}
+
+
+</script>
+</body>
+</html>
